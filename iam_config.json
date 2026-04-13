@@ -3,7 +3,7 @@
     {
       "username": "admin_ashley",
       "role": "Administrator",
-      "mfa_enabled": false
+      "mfa_enabled": true
     },
     {
       "username": "sandbox_sam",
