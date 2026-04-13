@@ -1,9 +1,14 @@
-package main
+package iam
 
-deny[message] {
-  some i
-  user := input.users[i]
+deny[msg] {
+  user := input.users[_]
   user.role == "Administrator"
-  not user.mfa_enabled
-  message := sprintf("Admin user '%s' does not have MFA enabled.", [user.username])
+
+  not has_mfa(user)
+
+  msg := sprintf("Admin user '%s' does not have MFA properly enabled", [user.username])
+}
+
+has_mfa(user) {
+  user.mfa_enabled == true
 }
