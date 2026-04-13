@@ -12,3 +12,8 @@
     }
   ]
 }
+{
+  "username": "bobby_tables",
+  "role": "Administrator",
+  "mfa_enabled": false
+}
