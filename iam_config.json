@@ -1,10 +1,8 @@
 {
-  "users": [
-    {
-      "username": "admin_ashley",
-      "role": "Administrator",
-      "mfa_enabled": true
-    },
+  "username": "bobby_tables",
+  "role": "Administrator",
+  "mfa_enabled": false
+}
     {
       "username": "sandbox_sam",
       "role": "User",
@@ -12,8 +10,4 @@
     }
   ]
 }
-{
-  "username": "bobby_tables",
-  "role": "Administrator",
-  "mfa_enabled": null
-}
+
